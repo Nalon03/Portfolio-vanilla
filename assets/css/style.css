@@ -1,28 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
-
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -55,7 +31,6 @@
   );
 
   /* solid */
-
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
@@ -68,6 +43,8 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+
 
   /**
    * typography
@@ -111,14 +88,6 @@
 
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -157,13 +126,6 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .sidebar,
 article {
@@ -256,8 +218,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px; 
+  height: 5px; 
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -292,27 +254,11 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
-
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
 
 .sidebar {
   margin-bottom: 15px;
@@ -329,11 +275,6 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-}
-
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
 }
 
 .info-content .name {
@@ -443,16 +384,7 @@ main {
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover { color: var(--light-gray); }
-
-
-
-
-
-/*-----------------------------------*\
-  #NAVBAR
-\*-----------------------------------*/
 
 .navbar {
   position: fixed;
@@ -487,14 +419,6 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
@@ -505,12 +429,6 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
-
-
-
-/**
- * #service 
- */
 
 .service { margin-bottom: 35px; }
 
@@ -554,11 +472,6 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
-
-
-/**
- * #testimonials 
- */
 
 .testimonials { margin-bottom: 30px; }
 
@@ -606,11 +519,6 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-
-/**
- * #testimonials-modal
- */
 
 .modal-container {
   position: fixed;
@@ -721,11 +629,6 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #clients 
- */
-
 .clients { margin-bottom: 15px; }
 
 .clients-list {
@@ -756,20 +659,7 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESUME
-\*-----------------------------------*/
-
 .article-title { margin-bottom: 30px; }
-
-
-/**
- * education and experience 
- */
 
 .timeline { margin-bottom: 30px; }
 
@@ -829,11 +719,6 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
-
 .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
@@ -866,14 +751,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #PORTFOLIO
-\*-----------------------------------*/
 
 .filter-list { display: none; }
 
@@ -1026,14 +903,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
 .blog-posts { margin-bottom: 10px; }
 
 .blog-posts-list {
@@ -1113,14 +982,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
 
 .mapbox {
   position: relative;
@@ -1221,44 +1082,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
-
   .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
 
   .project-img,
   .blog-banner-box { height: auto; }
 
 }
-
-
-
-
-
-/**
- * responsive larger than 580px screen
- */
 
 @media (min-width: 580px) {
 
@@ -1873,12 +1704,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
-
-
   /**
 	 * RESUME
 	 */
-
   .timeline-text { max-width: 700px; }
 
 }
