@@ -1,4 +1,2 @@
-**This personal portifolio website shows my about, skills, projects etc...**
-
-Below is the link
-https://nalon03.github.io/My_Portfolio/
+# Portfolio-vanilla
+Adding more functionalities to my portfolio - building up
