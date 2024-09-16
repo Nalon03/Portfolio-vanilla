@@ -176,6 +176,18 @@ article.active {
   display: block;
   animation: fade 0.5s ease backwards;
 }
+.other-projects{
+  color: white;
+  padding: 10px;
+}
+.linka{
+  color: hsl(45, 100%, 72%);
+  padding: 10px;
+  text-align: center;
+}
+.contact-list{
+  margin-top: 10px;
+}
 
 @keyframes fade {
   0% { opacity: 0; }
@@ -985,12 +997,11 @@ main {
 
 .mapbox {
   position: relative;
-  height: 250px;
-  width: 100%;
   border-radius: 16px;
-  margin-bottom: 30px;
   border: 1px solid var(--jet);
   overflow: hidden;
+  padding-left: 10px;
+
 }
 
 .mapbox figure { height: 100%; }

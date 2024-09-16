@@ -12,6 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          //https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+            publicKey: "we2xZIj0GFuUEvfvp",
+          });
+      })();
+  </script>
+    
   </head>
 
   <body>
@@ -314,7 +324,7 @@
                   Nchumuruman Senior High School
                 </h4>
 
-                <span>2016 — 2018</span>
+                <span>2015 — 2018</span>
 
                 <p class="timeline-text">• General Arts</p>
               </li>
@@ -345,15 +355,69 @@
             <ol class="timeline-list">
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
+                  National Service - Amalitech Ghana, East Legon
+                </h4>
+
+                <span>Nov. 2023 - Sept. 2024 </span>
+
+                <p class="timeline-text">
+                  <span
+                    >Frontend Developer — AmaliTech NSPs Project (AgriHub) —
+                    June 19th. – Sept 30th 2024</span
+                  >
+                  • Collaborated on AgriHub, a cutting-edge e-commerce platform
+                  built with Angular <br />
+                  • Worked as part of a team to develop innovative solutions for
+                  the agricultural market <br />
+                  • Designed and implemented user-centric features to enhance
+                  the buying and selling of farming products <br />
+                  • Focused on optimizing the platform for efficiency,
+                  usability, and scalability <br />
+                  • Contributed to bridging the gap between farmers and
+                  consumers with tailored, practical solutions
+                </p>
+                <p class="timeline-text">
+                  <span
+                    >Frontend Developer — AmaliTech NSPs Project (Entertainment
+                    App) — May 30th. – June 15th 2024</span
+                  >
+                  • Developed a dynamic entertainment app in Angular <br />
+                  • Implemented advanced features including movie filtering,
+                  favorites, and bookmarking <br />• Enhanced user engagement
+                  with a highly interactive and personalized experience <br />
+                  • Optimized performance for smooth and responsive user
+                  interactions
+                </p>
+
+                <p class="timeline-text">
+                  <span class
+                    >Frontend Developer — AmaliTech NSPs Project (Quiz App)—
+                    April 13th. – May 27th 2024</span
+                  >
+                  • Created an engaging quiz app with HTML, CSS, and JavaScript
+                  <br />
+                  • Designed a responsive interface for optimal user experience
+                  on all devices and networking services <br />
+                  • Implemented real-time feedback to enhance user interaction
+                  and learning <br />
+                  • Developed dynamic score tracking to provide immediate
+                  performance insights <br />
+                  • Optimized cross-browser compatibility to ensure a seamless
+                  experience for all users
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
                   Intern - iSpace Foundation, East Legon
                 </h4>
 
-                <span>October - December 2022 </span>
+                <span>Oct. - Dec. 2022 </span>
 
                 <p class="timeline-text">
-                  • Assisted in network configuration and troubleshooting •
-                  Participated in an IOT bootcamp and Hackathon program •
-                  Assisted in updating iSpace foundation's website
+                  • Assisted in network configuration and troubleshooting <br />
+                  •Participated in an IOT bootcamp and Hackathon program <br />
+                  •Assisted in updating iSpace foundation's website
                 </p>
               </li>
 
@@ -448,7 +512,7 @@
 
         <article class="portfolio" data-page="portfolio">
           <header>
-            <h2 class="h2 article-title">Portfolio</h2>
+            <h2 class="h2 article-title">Projects</h2>
           </header>
 
           <section class="projects">
@@ -458,7 +522,7 @@
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web design</button>
+                <button data-filter-btn>UI/UX</button>
               </li>
 
               <li class="filter-item">
@@ -466,7 +530,7 @@
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web development</button>
+                <button data-filter-btn>Websites</button>
               </li>
             </ul>
 
@@ -506,7 +570,7 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a href="https://nalon03.github.io/TODO-APP/">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -530,20 +594,43 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a href="https://nalon03.github.io/Frontend-Quiz-App/">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="assets/images/app-iPhone.png"
+                      src="assets/images/quiz-app-img.jfif"
                       alt="orizon"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Omnifood</h3>
+                  <h3 class="project-title">Frontend Quiz App</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href=" https://nalon03.github.io/Women-In-Tech-Quiz/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="assets/images/wit-quiz-img.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Frontend Quiz App</h3>
 
                   <p class="project-category">Web development</p>
                 </a>
@@ -598,6 +685,14 @@
               </li>
             </ul>
           </section>
+
+          <div class="other-projects">
+            Check out my git reposotory to see other projects I worked on,
+            including team collaborations ones at
+            <a class="linka" href="https://github.com/Nalon03"
+              >https://github.com/Nalon03</a
+            >
+          </div>
         </article>
 
         <!--
@@ -612,12 +707,12 @@
           <section class="mapbox" data-mapbox>
             <figure>
               <ul>
-                <li>* Tema Community 1, Accra-Ghana.</li>
-                <li>* Call or Whatsapp: 024-8311-783</li>
-                <li>* Twitter: @GraceNalon</li>
-                <li>* LinkedIn: NalonGrace03</li>
-                <li>* Github: Nalon03</li>
-                <li>* Email: nalongrace03@gmail.com</li>
+                <li class="contact-list">* Tema Community 1, Accra-Ghana.</li>
+                <li class="contact-list">* Call or Whatsapp: 024-8311-783</li>
+                <li class="contact-list">* Twitter: @GraceNalon</li>
+                <li class="contact-list">* LinkedIn: NalonGrace03</li>
+                <li class="contact-list">* Github: Nalon03</li>
+                <li class="contact-list">* Email: nalongrace03@gmail.com</li>
               </ul>
             </figure>
           </section>
@@ -664,14 +759,8 @@
       </div>
     </main>
 
-    <!--
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
 
-    <!--
-    - ionicon link
-  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
