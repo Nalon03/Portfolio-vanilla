@@ -135,11 +135,17 @@ document.querySelector(".form").addEventListener("submit", function (event) {
   emailjs.send("service_hr9zwml", "template_3o7oik1", formData).then(
     function (response) {
       submitButton.disabled = false;
+      let confirmMessage = document.getElementById("confirm-message");
+      confirmMessage.style.display = "block";
+      confirmMessage.textContent = "Your message has been sent successfully!";
+
       form.reset();
+      setTimeout(function () {
+        confirmMessage.style.display = "none";
+      }, 10000);
       console.log("Message Sent Successfully!");
     },
     function (error) {
-      console.log("Failed to send message, please try again later.");
       submitButton.disabled = false;
     }
   );
