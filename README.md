@@ -77,4 +77,4 @@ LICENSE
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 CONTACT
-Feel free to reach out to me through the contact form on my portfolio or via email at your-email@example.com
+Feel free to reach out to me through the contact form on my portfolio or via email at nalongrace03@gmail.com
